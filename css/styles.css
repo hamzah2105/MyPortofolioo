@@ -1,6 +1,6 @@
 /* ========== GENERAL ========== */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
   margin: 0;
   padding: 0;
@@ -20,156 +20,283 @@ body {
 
 /* ========== HEADER ========== */
 .header-section {
-  padding: 120px 0 80px;
+  background: linear-gradient(to bottom right, #ffffff, #f5f5f5);
 }
 
 .header-title {
-  font-size: 2.8rem;
-  font-weight: 700;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  color: #1d1d1d;
+  letter-spacing: 1px;
 }
 
-.header-img-wrapper {
-  perspective: 1000px;
-}
-
-.header-img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 20px;
-  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
-  transition: transform 0.6s ease;
-}
-
-.header-img:hover {
-  transform: rotateY(10deg) scale(1.05);
-}
-
-/* ========== BUTTON ========== */
-.btn {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.text-orange {
+  color: #ff6600;
 }
 
 .btn-orange {
-  background-color: #f97316;
-  color: #fff;
+  background-color: #ff6600;
+  color: white;
   border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-orange:hover {
-  background-color: #ea580c;
+  background-color: #e65c00;
+  transform: scale(1.05);
 }
+
+.header-img {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
 
 /* ========== PORTFOLIO SECTION ========== */
-.portfolio-section {
-  padding: 80px 0;
+/* Portfolio Section Custom Styling */
+/* Tombol Orange Keren */
+.btn-orange {
+  background: linear-gradient(135deg, #ff6600, #ff7e29);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 14px rgba(255, 102, 0, 0.4);
 }
 
-.card {
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  height: 100%;
+.btn-orange:hover {
+  background: linear-gradient(135deg, #e65700, #ff6b00);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 18px rgba(255, 102, 0, 0.5);
 }
 
-.card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+/* Kartu Portofolio */
+.portofolio-section .card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.card-img-top {
-  width: 100%;
-  height: 200px;
+.portofolio-section .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Gambar di Kartu Portofolio */
+.portofolio-section .card-img-top {
+  height: 180px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 16px 16px 0 0;
+  transition: transform 0.3s ease;
 }
+
+.portofolio-section .card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Judul Portofolio */
+.portofolio-section .card h6 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Responsive Spacing */
+@media (max-width: 768px) {
+  .portofolio-section .card-img-top {
+    height: 150px;
+  }
+}
+
+
 
 /* ========== PROJECT DETAIL SECTION ========== */
+/* Detail Section Wrapper */
 .project-detail-section {
   padding: 100px 0;
-  background-color: #ffffff;
+  background-color: #f1f5f9;
+  animation: fadeIn 0.8s ease-in-out;
 }
 
+/* Kartu Detail Proyek */
 .project-detail-card {
-  background-color: #f9fafb;
+  background-color: #ffffff;
   border-radius: 20px;
-  padding: 30px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
 }
 
+.project-detail-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Judul Proyek */
 .project-title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 25px;
+  border-left: 5px solid #f97316;
+  padding-left: 15px;
 }
 
-.project-description {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
+/* Deskripsi Proyek */
+.project-description,
+.project-detail-card p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #374151;
+}
+
+/* Teknologi List */
+.project-detail-card ul {
+  padding-left: 18px;
+  margin-bottom: 30px;
+}
+
+.project-detail-card ul li {
+  line-height: 1.7;
+  color: #1f2937;
+}
+
+/* Swiper Gambar & Video */
+.swiper.project-swiper {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.swiper-slide img,
+.swiper-slide video {
+  border-radius: 12px;
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.swiper-slide:hover img,
+.swiper-slide:hover video {
+  transform: scale(1.02);
 }
 
 /* Swiper Buttons */
 .swiper-button-next,
 .swiper-button-prev {
   color: #f97316;
-  background: #fff;
-  width: 40px;
-  height: 40px;
+  background: #ffffff;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   background-color: #f97316;
   color: #fff;
+  transform: scale(1.1);
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+  background-color: #d1d5db;
+  opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-  background: #f97316;
+  background-color: #f97316;
 }
+
+/* Tombol Back to Portfolio */
+.btn-primary {
+  background-color: #f97316;
+  border-color: #f97316;
+  padding: 10px 24px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #ea580c;
+  border-color: #ea580c;
+  transform: scale(1.05);
+}
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* ========== SKILL SECTION ========== */
-.skill-item {
-  text-align: center;
-  margin-bottom: 30px;
+.skill-section {
+  background: linear-gradient(145deg, #111827, #1f2937);
 }
 
-.skill-item i {
+.skill-card {
+  background-color: #1f2937;
+  border-radius: 12px;
+  padding: 20px 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  background-color: #374151;
+}
+
+.skill-card i {
   transition: transform 0.3s ease;
-  font-size: 2.5rem;
 }
 
-.skill-item:hover i {
-  transform: rotateY(15deg) scale(1.3);
+.skill-card:hover i {
+  transform: scale(1.2) rotate(5deg);
 }
 
-.line {
-  width: 40px;
-  height: 2px;
-  margin: 8px auto;
-  background-color: #f97316;
+.skill-card p {
+  margin: 0;
+  font-weight: 500;
+  color: #f3f4f6;
 }
 
 /* ========== TIMELINE ========== */
 .timeline-section {
   padding: 80px 0;
+  background: #f9fafb;
 }
 
-.timeline-section .row {
-  transition: background 0.3s ease;
-  padding: 15px;
+.timeline-item {
+  border-left: 4px solid #f97316;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.timeline-section .row:hover {
-  background-color: #f3f4f6;
-  border-radius: 8px;
+.timeline-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.bg-orange {
+  background-color: #f97316 !important;
 }
 
 /* ========== FOOTER ========== */
