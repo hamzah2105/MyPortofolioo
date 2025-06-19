@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="vendors/boostraps/css/bootstrap.min.css" />
@@ -46,16 +42,13 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#portofolio">Portofolio</a>
@@ -66,9 +59,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#timelane">TimeLine</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contacts</a>
-            </li>
           </ul>
         </div>
       </div>
@@ -78,7 +68,7 @@
     <!-- Project Detail Section -->
     <section class="project-detail-section">
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-md-8">
             <div class="project-detail-card">
               <h2 class="project-title">Portfolio Project 1</h2>
@@ -89,27 +79,24 @@
                   <div class="swiper-slide">
                     <img
                       src="img/projects/h.png"
-                      alt="Gallery Image 1"
+                      alt="Gallery 1"
                       class="img-fluid rounded w-100"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
                       src="img/projects/p.png"
-                      alt="Gallery Image 2"
+                      alt="Gallery 2"
                       class="img-fluid rounded w-100"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
                       src="img/projects/l.png"
-                      alt="Gallery Image 3"
+                      alt="Gallery 3"
                       class="img-fluid rounded w-100"
                     />
                   </div>
-                  <!-- <div class="swiper-slide">
-                  <img src="img/projects/4.jpg" alt="Gallery Image 4" class="img-fluid rounded w-100">
-                </div> -->
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -119,10 +106,7 @@
               <p class="project-description">
                 This project was developed as part of the Green Academy
                 bootcamp. It showcases a portfolio project created with HTML5,
-                CSS, and JavaScript. The aim was to design a clean, responsive
-                web page to highlight web development skills. Features include
-                animations, hover effects, and a responsive layout using
-                Bootstrap 5.
+                CSS, and JavaScript.
               </p>
 
               <h5>Technologies Used:</h5>
@@ -136,12 +120,12 @@
               <h5>Project Details:</h5>
               <p>
                 The project was built using the latest web standards and tools.
-                It is fully responsive, designed for desktop and mobile devices.
-                The goal was to create a personal portfolio to showcase the
-                skills learned during the bootcamp.
+                It is fully responsive and designed for desktop and mobile.
               </p>
 
-              <a href="index.html" class="btn btn-primary">Back to Portfolio</a>
+              <a href="index.html" class="btn btn-primary mt-3"
+                >Back to Portfolio</a
+              >
             </div>
           </div>
         </div>
@@ -152,12 +136,12 @@
     <footer class="py-3 bg-dark">
       <div class="container">
         <p class="text-white fs-7 mb-0 text-center">
-          CopyRight &copy; 2024 Hamzah. All Rights Reserved
+          &copy; 2024 Hamzah. All Rights Reserved
         </p>
       </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- Scripts -->
     <script src="vendors/boostraps/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -166,11 +150,11 @@
       const swiper = new Swiper(".project-swiper", {
         loop: true,
         spaceBetween: 10,
-        slidesPerView: 1, // Hanya 1 gambar per slide
+        slidesPerView: 1,
         centeredSlides: true,
         autoplay: {
-          delay: 2500, // Jeda 2.5 detik antar slide
-          disableOnInteraction: false, // Biarkan autoplay terus berjalan meskipun user berinteraksi
+          delay: 2500,
+          disableOnInteraction: false,
         },
         pagination: {
           el: ".swiper-pagination",

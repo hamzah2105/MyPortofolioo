@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
+    <title>Traveling Project | Hamzah</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="vendors/boostraps/css/bootstrap.min.css" />
@@ -32,13 +32,13 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css" />
-
-    <title>My Portfolio | Hamzah</title>
   </head>
 
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm"
+    >
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">Hamzah</a>
         <button
@@ -54,92 +54,75 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link" href="#portofolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portofolio">Portofolio</a>
+              <a class="nav-link" href="#skill">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skill">Skill</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#timelane">TimeLine</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contacts</a>
+              <a class="nav-link" href="#timelane">Timeline</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- End Navbar -->
 
     <!-- Project Detail Section -->
-    <section class="project-detail-section">
+    <section class="project-detail-section mt-5 pt-5">
       <div class="container">
-        <div class="row">
-          <div class="col-md-8">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8">
             <div class="project-detail-card">
-              <h2 class="project-title">Portfolio Project 1</h2>
+              <h2 class="project-title">Traveling Website Project</h2>
 
               <!-- Swiper Gallery -->
               <div class="swiper project-swiper mb-4">
                 <div class="swiper-wrapper">
+                  <!-- Slide 1: Figma Design -->
                   <div class="swiper-slide">
                     <img
                       src="img/projects/Traveling Mobil.png"
-                      alt="Gallery Image 1"
+                      alt="UI Design"
                       class="img-fluid rounded w-100"
                     />
                   </div>
+
+                  <!-- Slide 2 -->
                   <div class="swiper-slide">
-                    <a
-                      href="vidio/Traveling Mobil - Google Chrome 2025-04-05 01-01-00.mp4"
-                      target="_blank"
-                    >
-                      <video class="img-fluid rounded w-100" muted>
-                        <source
-                          src="vidio/Traveling Mobil - Google Chrome 2025-04-05 01-01-00.mp4"
-                          type="video/mp4"
-                        />
-                        Your browser does not support the video tag.
-                      </video>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a
-                      href="vidio/Majestic Admin - Google Chrome 2025-04-21 10-52-02.mp4"
-                      target="_blank"
-                    >
-                      <video class="img-fluid rounded w-100" muted>
-                        <source
-                          src="vidio/Majestic Admin - Google Chrome 2025-04-21 10-52-02.mp4"
-                          type="video/mp4"
-                        />
-                        Your browser does not support the video tag.
-                      </video>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a
-                      href="vidio/Traveling Mobil - Web Developer.mp4"
-                      target="_blank"
-                    >
-                      <video class="img-fluid rounded w-100" muted>
-                        <source
-                          src="vidio/Traveling Mobil - Web Developer.mp4"
-                          type="video/mp4"
-                        />
-                        Your browser does not support the video tag.
-                      </video>
-                    </a>
+                    <video class="img-fluid rounded w-100" controls muted>
+                      <source
+                        src="vidio/Traveling Mobil - Google Chrome 2025-04-05 01-01-00.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
 
-                  <!-- <div class="swiper-slide">
-                  <img src="img/projects/4.jpg" alt="Gallery Image 4" class="img-fluid rounded w-100">
-                </div> -->
+                  <!-- Slide 3 -->
+                  <div class="swiper-slide">
+                    <video class="img-fluid rounded w-100" controls muted>
+                      <source
+                        src="vidio/Majestic Admin - Google Chrome 2025-04-21 10-52-02.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+
+                  <!-- Slide 4 -->
+                  <div class="swiper-slide">
+                    <video class="img-fluid rounded w-100" controls muted>
+                      <source
+                        src="vidio/Traveling Mobil - Web Developer.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
                 </div>
+
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
@@ -147,34 +130,43 @@
 
               <h5>Technologies Used:</h5>
               <ul>
-                <li>Laravel 9</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
+                <li>Laravel 9 (Backend)</li>
+                <li>HTML5, CSS3, JavaScript (Frontend)</li>
                 <li>Bootstrap 5</li>
                 <li>Figma (UI Design)</li>
               </ul>
 
               <h5>Project Details:</h5>
               <p>
-                This is my second project, where I developed a
+                This is my second major project where I developed a
                 <strong>traveling website</strong> for my older brother. The
-                website is built to showcase the various places he has visited
-                using his car. The goal is to share his travel experiences
-                through a clean and informative interface. <br /><br />
-                The design was created using <strong>Figma</strong>, while the
-                frontend is developed using
-                <strong>HTML5, CSS3, JavaScript, and Bootstrap 5</strong>. For
-                the backend, I used <strong>Laravel 9</strong> to manage travel
-                destinations, data, and user interactions. <br /><br />
-                - <strong>Slide 1:</strong> UI Design from Figma<br />
-                - <strong>Slide 2:</strong> Frontend demo video<br />
-                - <strong>Slide 3:</strong> Backend features<br />
-                - <strong>Slide 4:</strong> Fullstack Developer / Web Developer
-                showcase youtube : https://youtu.be/PQPAcnuV57c
+                goal of the website is to document and share travel experiences
+                using his personal car in an elegant and informative interface.
+              </p>
+              <p>
+                I designed the UI in <strong>Figma</strong>, then built the
+                frontend using <strong>HTML5</strong>, <strong>CSS3</strong>,
+                <strong>JavaScript</strong>, and <strong>Bootstrap 5</strong>.
+                The backend is built with <strong>Laravel 9</strong> to manage
+                destinations, dynamic content, and user interaction.
               </p>
 
-              <a href="index.html" class="btn btn-primary">Back to Portfolio</a>
+              <h6 class="mt-4">Slide Descriptions:</h6>
+              <ul>
+                <li><strong>Slide 1:</strong> UI Design from Figma</li>
+                <li><strong>Slide 2:</strong> Frontend Demo</li>
+                <li><strong>Slide 3:</strong> Backend Functionality</li>
+                <li>
+                  <strong>Slide 4:</strong> Fullstack Developer Showcase —
+                  <a href="https://youtu.be/PQPAcnuV57c" target="_blank"
+                    >Watch on YouTube</a
+                  >
+                </li>
+              </ul>
+
+              <a href="index.html" class="btn btn-primary mt-3"
+                >← Back to Portfolio</a
+              >
             </div>
           </div>
         </div>
@@ -184,8 +176,8 @@
     <!-- Footer -->
     <footer class="py-3 bg-dark">
       <div class="container">
-        <p class="text-white fs-7 mb-0 text-center">
-          CopyRight &copy; 2024 Hamzah. All Rights Reserved
+        <p class="text-white text-center mb-0">
+          © 2024 Hamzah. All Rights Reserved.
         </p>
       </div>
     </footer>
@@ -199,11 +191,11 @@
       const swiper = new Swiper(".project-swiper", {
         loop: true,
         spaceBetween: 10,
-        slidesPerView: 1, // Hanya 1 gambar per slide
+        slidesPerView: 1,
         centeredSlides: true,
         autoplay: {
-          delay: 2500, // Jeda 2.5 detik antar slide
-          disableOnInteraction: false, // Biarkan autoplay terus berjalan meskipun user berinteraksi
+          delay: 2500,
+          disableOnInteraction: false,
         },
         pagination: {
           el: ".swiper-pagination",

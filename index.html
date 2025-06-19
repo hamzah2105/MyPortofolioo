@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -20,23 +19,23 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-    <!--MY CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
-
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
 
+    <!-- Devicon -->
     <link
       rel="stylesheet"
-      type="text/css"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
     <title>My Portofolio | Hamzah</title>
   </head>
-
   <body id="home">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
@@ -56,7 +55,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#portfolio">Portofolio</a>
@@ -67,14 +66,10 @@
             <li class="nav-item">
               <a class="nav-link" href="#timelane">TimeLine</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contacts</a>
-            </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- Akhir Navbar -->
 
     <!-- Header -->
     <section class="header-section" id="header">
@@ -91,58 +86,45 @@
               Framework, and Laravel Framework. Has internship experience at the
               Bandung branch of BPJS Kesehatan in the IT Helpdesk field which
               creates a website for recording inactive deceased BPJS Kesehatan
-              card participants
+              card participants.
             </p>
             <div class="col-md-5">
               <ul class="list-inline dev-icons">
                 <li class="list-inline-item">
-                  <a
-                    href="https://github.com/hamzah2105"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i class="devicon-github-original"></i>
-                  </a>
+                  <a href="https://github.com/hamzah2105" target="_blank"
+                    ><i class="devicon-github-original"></i
+                  ></a>
                 </li>
                 <li class="list-inline-item">
                   <a
                     href="https://www.linkedin.com/in/hamzah-hamzah-963162298/"
                     target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i class="devicon-linkedin-plain"></i>
-                  </a>
+                    ><i class="devicon-linkedin-plain"></i
+                  ></a>
                 </li>
                 <li class="list-inline-item">
                   <a
                     href="https://www.youtube.com/@hamzahdoank6189"
                     target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i class="fab fa-youtube"></i>
-                  </a>
+                    ><i class="fab fa-youtube"></i
+                  ></a>
                 </li>
                 <li class="list-inline-item">
                   <a
                     href="https://www.instagram.com/kirikanaannn/profilecard/?igsh=MWhmNHViMXpua3c1bA=="
                     target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i class="fab fa-instagram"></i>
-                  </a>
+                    ><i class="fab fa-instagram"></i
+                  ></a>
                 </li>
               </ul>
             </div>
             <div class="d-flex align-items-center gap-4 mt-3">
-              <div class="d-flex align-items-center gap-5">
-                <a
-                  href="pdf/_cv ATS Hamzah inggris.docx.pdf"
-                  class="header-skill fw-semibold mb-0 btn btn-dark text-white w-250 rounded-0"
-                  target="_blank"
-                >
-                  Resume CV
-                </a>
-              </div>
+              <a
+                href="pdf/CV-Hamzah-Web Developer-English Ver.docx.pdf"
+                class="btn btn-dark text-white w-250 rounded-0"
+                target="_blank"
+                >Resume CV</a
+              >
             </div>
           </div>
           <div class="col-md-5 d-flex justify-content-center">
@@ -153,114 +135,99 @@
         </div>
       </div>
     </section>
-    <!-- Akhir Jumbotron -->
 
-    <!-- Projects -->
-    <section class="portfolio-section" id="portfolio">
+    <!-- Portfolio -->
+    <section class="portofolio-secrion" id="portofolio">
       <div class="container">
         <p class="text-orange fw-semibold">Portofolio</p>
         <h2 class="section-title mb-5">Selected Works</h2>
-
-        <!-- Swiper -->
-        <div class="swiper portfolio-swiper">
+        <div class="swiper portofolio-swiper">
           <div class="swiper-wrapper">
-            <!-- Portfolio Item 1 -->
+            <!-- Slide 1 -->
             <div class="swiper-slide">
               <div class="card">
-                <img
-                  src="img/projects/images.png"
-                  alt="Project Image"
-                  class="card-img-top rounded mb-3"
-                />
                 <div class="card-body">
-                  <h6 class="fw-semibold">Bootcamp Green Academy</h6>
+                  <img
+                    src="img/projects/images.png"
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">Bootcamp</h6>
                   <a href="detail.html" class="btn btn-orange text-white"
                     >Detail Portofolio</a
                   >
                 </div>
               </div>
             </div>
-
-            <!-- Portfolio Item 2 -->
+            <!-- Slide 2 -->
             <div class="swiper-slide">
               <div class="card">
-                <img
-                  src="img/projects/logo-bpjs-kesehatan-l.jpg"
-                  alt="Project Image"
-                  class="card-img-top rounded mb-3"
-                />
                 <div class="card-body">
-                  <h6 class="fw-semibold">internship BPJS Kesehatan</h6>
+                  <img
+                    src="img/projects/logo-bpjs-kesehatan-l.jpg"
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">BPJS Kesehatan</h6>
                   <a href="detail2.html" class="btn btn-orange text-white"
                     >Detail Portofolio</a
                   >
                 </div>
               </div>
             </div>
-
-            <!-- Portfolio Item 3 -->
+            <!-- Slide 3 -->
             <div class="swiper-slide">
               <div class="card">
-                <img
-                  src="img/projects/19.png"
-                  alt="Project Image"
-                  class="card-img-top rounded mb-3"
-                />
                 <div class="card-body">
-                  <h6 class="fw-semibold">My Project POrtofolio</h6>
+                  <img
+                    src="img/projects/19.png"
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">Project Portofolio</h6>
                   <a href="detail3.html" class="btn btn-orange text-white"
                     >Detail Portofolio</a
                   >
                 </div>
               </div>
             </div>
-
-            <!-- Portfolio Item 4 -->
+            <!-- Slide 4 -->
             <div class="swiper-slide">
               <div class="card">
-                <img
-                  src="img/projects/travelingmobill.png"
-                  alt="Project Image"
-                  class="card-img-top rounded mb-3"
-                />
                 <div class="card-body">
-                  <h6 class="fw-semibold">My Project Web Traveling Mobil</h6>
-                  <a href="detail4.html" class="btn btn-orange text-white"
+                  <img
+                    src="img/projects/travelingmobill.png"
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">Traveling Mobil</h6>
+                  <a href="detail4.html" class="text-orange"
                     >Detail Portofolio</a
                   >
                 </div>
               </div>
             </div>
-
-            <!-- Portfolio Item 5 -->
+            <!-- Slide 5 -->
             <div class="swiper-slide">
               <div class="card">
-                <img
-                  src="img/projects/warkophamzah.png"
-                  alt="Project Image"
-                  class="card-img-top rounded mb-3"
-                />
                 <div class="card-body">
-                  <h6 class="fw-semibold">My Project Web pembelian Warkop Hamzah</h6>
-                  <a href="detail5.html" class="btn btn-orange text-white"
+                  <img
+                    src="img/projects/warkophamzah.png"
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">Warkop Hamzah</h6>
+                  <a href="detail5.html" class="text-orange"
                     >Detail Portofolio</a
                   >
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Swiper Navigation and Pagination -->
-          <div class="swiper-button-prev">
-            <i class="bx bx-left-arrow-alt"></i>
+          <!-- Navigation -->
+          <div class="d-flex align-items-center justify-content-end gap-3 mt-3">
+            <button class="btn btn-light btn-prev">
+              <i class="bx bx-left-arrow-alt fs-5"></i>
+            </button>
+            <button class="btn btn-light btn-next">
+              <i class="bx bx-right-arrow-alt fs-5"></i>
+            </button>
           </div>
-          <div class="swiper-button-next">
-            <i class="bx bx-right-arrow-alt"></i>
-          </div>
-          
-
-          <!-- Pagination -->
-          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -271,50 +238,46 @@
         <p class="text-orange fw-semibold">Skills</p>
         <h2 class="mb-4">Programming Languages & Tools</h2>
         <div class="row justify-content-center">
-          <!-- Skill item -->
           <div class="col-4 col-md-2 skill-item">
             <i class="devicon-html5-plain colored fs-1"></i>
-            <div class="line"></div>
             <p class="mt-2">HTML</p>
           </div>
           <div class="col-4 col-md-2 skill-item">
             <i class="devicon-css3-plain colored fs-1"></i>
-            <div class="line"></div>
             <p class="mt-2">CSS</p>
           </div>
           <div class="col-4 col-md-2 skill-item">
             <i class="devicon-javascript-plain colored fs-1"></i>
-            <div class="line"></div>
             <p class="mt-2">JavaScript</p>
           </div>
           <div class="col-4 col-md-2 skill-item">
             <i class="devicon-php-plain colored fs-1"></i>
-            <div class="line"></div>
             <p class="mt-2">PHP</p>
           </div>
           <div class="col-4 col-md-2 skill-item">
             <i class="devicon-laravel-plain colored fs-1"></i>
-            <div class="line"></div>
             <p class="mt-2">Laravel</p>
           </div>
           <div class="col-4 col-md-2 skill-item">
             <i class="devicon-codeigniter-plain colored fs-1"></i>
-            <div class="line"></div>
             <p class="mt-2">CodeIgniter</p>
+          </div>
+          <!-- Figma Skill -->
+          <div class="col-4 col-md-2 skill-item">
+            <i class="devicon-figma-plain colored fs-1"></i>
+            <p class="mt-2">Figma</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Akhir Skill -->
-
-    <!-- Working Period -->
+    <!-- Timeline -->
     <section class="timeline-secrion" id="timelane">
       <div class="container">
         <p class="text-orange fw-semibold">TimeLine</p>
         <h2 class="section-title mb-5">Working Period</h2>
         <div class="row py-3 border-bottom">
-          <div class="col-md-4">Februari. 2024 - Today</div>
+          <div class="col-md-4">Februari. 2024 - June. 2024</div>
           <div class="col-md-4">Bootcamp Web Development</div>
           <div class="col-md-4">Green Academy</div>
         </div>
@@ -325,72 +288,34 @@
         </div>
       </div>
     </section>
-    <!-- Akhir Working Period -->
-
-    <!-- Contact -->
-    <!-- <section class="contact-secrion" id="contact">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md-6">
-            <p class="text-orange fw-semibold">Contact</p>
-            <h2 class="section-title mb-5">GET IN TOUCH</h2>
-            <p class="text-secondary mb-3">
-              Please fil out the form on this section to contact with me. Or
-              call between 08:00 a.m. and 09:00 p.m. Et, monday through friday
-            </p>
-            <div class="d-felx align-items-center gap-2 mb-3">
-              <i class="bx bx-map-pin text-orange fs-5"></i>
-              <div class="mb-0">Krajan 1, Karawang Timur, Jawa Barat</div>
-            </div>
-            <div class="d-felx align-items-center gap-2 mb-3">
-              <i class="bx bx-phone-call text-orange fs-5"></i>
-              <div class="mb-0">+62 087874716993</div>
-            </div>
-            <div class="d-felx align-items-center gap-2 mb-3">
-              <i class="bx bx-envelope text-orange fs-5"></i>
-              <div class="mb-0">hamzah210521@gamil.com</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- Akhir Contact -->
 
     <!-- Footer -->
     <footer class="py-3">
       <div class="container">
         <p class="text-white fs-7 mb-0 text-center">
-          CopyRight & Copy; 2024 Hamzah. All Right Reserved
+          CopyRight &copy; 2024 Hamzah. All Right Reserved
         </p>
       </div>
     </footer>
-    <!-- Akhir Footer -->
 
     <!-- Javascript -->
     <script src="vendors/boostraps/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Swiper Javascrip -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script>
-      var swiper = new Swiper(".portfolio-swiper", {
+      var swiper = new Swiper(".portofolio-swiper", {
         slidesPerView: 3,
         spaceBetween: 30,
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".btn-next",
+          prevEl: ".btn-prev",
         },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
         breakpoints: {
-          768: {
-            slidesPerView: 2,
-          },
-          576: {
-            slidesPerView: 1,
-          },
+          768: { slidesPerView: 2 },
+          576: { slidesPerView: 1 },
         },
       });
     </script>

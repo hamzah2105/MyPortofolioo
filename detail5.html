@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
+    <title>Warkop Hamzah Project | Hamzah</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="vendors/boostraps/css/bootstrap.min.css" />
@@ -32,13 +32,13 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css" />
-
-    <title>My Portfolio | Hamzah</title>
   </head>
 
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm"
+    >
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">Hamzah</a>
         <button
@@ -58,13 +58,13 @@
               <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portofolio">Portofolio</a>
+              <a class="nav-link" href="#portofolio">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#skill">Skill</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#timelane">TimeLine</a>
+              <a class="nav-link" href="#timelane">Timeline</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contacts</a>
@@ -73,72 +73,57 @@
         </div>
       </div>
     </nav>
-    <!-- End Navbar -->
 
     <!-- Project Detail Section -->
-    <section class="project-detail-section">
+    <section class="project-detail-section pt-5 mt-5">
       <div class="container">
-        <div class="row">
-          <div class="col-md-8">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8">
             <div class="project-detail-card">
-              <h2 class="project-title">Portfolio Project 1</h2>
+              <h2 class="project-title">Warkop Hamzah Inventory System</h2>
 
               <!-- Swiper Gallery -->
               <div class="swiper project-swiper mb-4">
                 <div class="swiper-wrapper">
+                  <!-- Slide 1 -->
                   <div class="swiper-slide">
                     <img
                       src="img/projects/Warkop Hamzah.png"
-                      alt="Gallery Image 1"
+                      alt="Warkop Hamzah UI"
                       class="img-fluid rounded w-100"
                     />
                   </div>
+
+                  <!-- Slide 2 -->
                   <div class="swiper-slide">
-                    <a
-                      href="vidio/Document - Google Chrome 2025-03-13 22-37-32.mp4"
-                      target="_blank"
-                    >
-                      <video class="img-fluid rounded w-100" muted>
-                        <source
-                          src="vidio/Document - Google Chrome 2025-03-13 22-37-32.mp4"
-                          type="video/mp4"
-                        />
-                        Your browser does not support the video tag.
-                      </video>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a
-                      href=""
-                      target="_blank"
-                    >
-                      <video class="img-fluid rounded w-100" muted>
-                        <source
-                          src=""
-                          type="video/mp4"
-                        />
-                        Your browser does not support the video tag.
-                      </video>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a
-                      href=""
-                      target="_blank"
-                    >
-                      <video class="img-fluid rounded w-100" muted>
-                        <source
-                          src=""
-                          type="video/mp4"
-                        />
-                        Your browser does not support the video tag.
-                      </video>
-                    </a>
+                    <video class="img-fluid rounded w-100" controls muted>
+                      <source
+                        src="vidio/Document - Google Chrome 2025-03-13 22-37-32.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
 
-                  <!-- <div class="swiper-slide">
-                  <img src="img/projects/4.jpg" alt="Gallery Image 4" class="img-fluid rounded w-100">
-                </div> -->
+                  <!-- Slide 3 (hapus jika tidak ada) -->
+                  <!--
+                  <div class="swiper-slide">
+                    <video class="img-fluid rounded w-100" controls muted>
+                      <source src="vidio/backend-admin.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  -->
+
+                  <!-- Slide 4 (hapus jika tidak ada) -->
+                  <!--
+                  <div class="swiper-slide">
+                    <video class="img-fluid rounded w-100" controls muted>
+                      <source src="vidio/developer-role.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  -->
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -148,37 +133,38 @@
               <h5>Technologies Used:</h5>
               <ul>
                 <li>Laravel 9</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
+                <li>HTML5 & CSS3</li>
                 <li>JavaScript</li>
                 <li>Bootstrap 5</li>
-                <li>Figma (Design)</li>
+                <li>Figma (UI/UX Design)</li>
               </ul>
 
               <h5>Project Details:</h5>
               <p>
-                In this project, I developed a website system for managing
-                product inventory for a small business called
-                <strong>Warkop Hamzah</strong>. The goal of the system is to
-                help the owner track stock easily and enable customers to place
-                orders directly through the web application. The user interface
-                was designed using <strong>Figma</strong>, while the frontend
-                was built with <strong>HTML, CSS, JavaScript,</strong> and
-                <strong>Bootstrap 5</strong>. The backend is powered by
-                <strong>Laravel 9</strong>, which handles CRUD operations,
-                authentication, transaction management, and stock reports. The
-                website is fully responsive and optimized for both desktop and
-                mobile devices.
+                This project was built for a small coffee shop called
+                <strong>Warkop Hamzah</strong>. I developed a custom inventory
+                and transaction management system to help the owner monitor
+                product stock, manage customer orders, and track sales.
               </p>
-
               <p>
-                Slide 1 shows the website design for Warkop Hamzah, Slide 2
-                displays the frontend interface, Slide 3 demonstrates the
-                backend (admin panel & data management), and Slide 4 represents
-                my role as a Fullstack/Web Developer in this project.
+                The frontend was designed using <strong>Figma</strong> and
+                implemented using
+                <strong>HTML, CSS, Bootstrap, and JavaScript</strong>. The
+                backend was developed with <strong>Laravel 9</strong> to handle
+                CRUD operations, user authentication, transaction logging, and
+                stock reports.
+              </p>
+              <p>
+                <strong>Slide 1:</strong> UI Design Overview<br />
+                <strong>Slide 2:</strong> Frontend Demo (Order & Product
+                View)<br />
+                <strong>Slide 3:</strong> Backend Panel (if available)<br />
+                <strong>Slide 4:</strong> Developer Role (if available)
               </p>
 
-              <a href="index.html" class="btn btn-primary">Back to Portfolio</a>
+              <a href="index.html" class="btn btn-primary mt-3"
+                >← Back to Portfolio</a
+              >
             </div>
           </div>
         </div>
@@ -188,8 +174,8 @@
     <!-- Footer -->
     <footer class="py-3 bg-dark">
       <div class="container">
-        <p class="text-white fs-7 mb-0 text-center">
-          CopyRight &copy; 2024 Hamzah. All Rights Reserved
+        <p class="text-white text-center mb-0">
+          © 2024 Hamzah. All Rights Reserved.
         </p>
       </div>
     </footer>
@@ -203,11 +189,11 @@
       const swiper = new Swiper(".project-swiper", {
         loop: true,
         spaceBetween: 10,
-        slidesPerView: 1, // Hanya 1 gambar per slide
+        slidesPerView: 1,
         centeredSlides: true,
         autoplay: {
-          delay: 2500, // Jeda 2.5 detik antar slide
-          disableOnInteraction: false, // Biarkan autoplay terus berjalan meskipun user berinteraksi
+          delay: 2500,
+          disableOnInteraction: false,
         },
         pagination: {
           el: ".swiper-pagination",

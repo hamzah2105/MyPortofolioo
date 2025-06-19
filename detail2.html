@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
+
+    <title>Portfolio Detail | Hamzah</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="vendors/boostraps/css/bootstrap.min.css" />
@@ -32,13 +33,13 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css" />
-
-    <title>My Portfolio | Hamzah</title>
   </head>
 
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm"
+    >
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">Hamzah</a>
         <button
@@ -54,34 +55,28 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link" href="#portofolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portofolio">Portofolio</a>
+              <a class="nav-link" href="#skill">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skill">Skill</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#timelane">TimeLine</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contacts</a>
+              <a class="nav-link" href="#timelane">Timeline</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- End Navbar -->
 
     <!-- Project Detail Section -->
-    <section class="project-detail-section">
+    <section class="project-detail-section mt-5 pt-5">
       <div class="container">
-        <div class="row">
-          <div class="col-md-8">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8">
             <div class="project-detail-card">
-              <h2 class="project-title">Portfolio Project 1</h2>
+              <h2 class="project-title">BPJS Deceased Tracking System</h2>
 
               <!-- Swiper Gallery -->
               <div class="swiper project-swiper mb-4">
@@ -89,22 +84,16 @@
                   <div class="swiper-slide">
                     <img
                       src="img/projects/bpjs.png"
-                      alt="Gallery Image 1"
+                      alt="BPJS Project Screenshot"
                       class="img-fluid rounded w-100"
                     />
                   </div>
-                  <!-- <div class="swiper-slide">
-                  <img src="img/projects/p.png" alt="Gallery Image 2" class="img-fluid rounded w-100">
                 </div>
-                <div class="swiper-slide">
-                  <img src="img/projects/l.png" alt="Gallery Image 3" class="img-fluid rounded w-100">
-                </div> -->
-                  <!-- <div class="swiper-slide">
-                  <img src="img/projects/4.jpg" alt="Gallery Image 4" class="img-fluid rounded w-100">
-                </div> -->
-                </div>
+                <!-- Show nav only if >1 image -->
+                <!--
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+                -->
                 <div class="swiper-pagination"></div>
               </div>
 
@@ -119,16 +108,17 @@
 
               <h5>Project Details:</h5>
               <p>
-                During my one-month internship at BPJS Kesehatan, I worked on a
-                project to create a system for tracking participants who are
-                deceased or inactive, using Laravel 8. The goal of the project
-                was to simplify the management of BPJS Kesehatan cardholder
-                data, ensuring the system is efficient and accurate. The system
-                is fully responsive, meaning it works well on both desktop and
-                mobile devices, offering a great user experience.
+                During my one-month internship at
+                <strong>BPJS Kesehatan</strong>, I developed a system to manage
+                and track deceased or inactive participants using
+                <strong>Laravel 8</strong>. This system improves the accuracy
+                and efficiency of cardholder data management. The website is
+                fully responsive and works well on all devices.
               </p>
 
-              <a href="index.html" class="btn btn-primary">Back to Portfolio</a>
+              <a href="index.html" class="btn btn-orange mt-3"
+                >← Back to Portfolio</a
+              >
             </div>
           </div>
         </div>
@@ -139,7 +129,7 @@
     <footer class="py-3 bg-dark">
       <div class="container">
         <p class="text-white fs-7 mb-0 text-center">
-          CopyRight &copy; 2024 Hamzah. All Rights Reserved
+          © 2024 Hamzah. All Rights Reserved.
         </p>
       </div>
     </footer>
@@ -153,11 +143,11 @@
       const swiper = new Swiper(".project-swiper", {
         loop: true,
         spaceBetween: 10,
-        slidesPerView: 1, // Hanya 1 gambar per slide
+        slidesPerView: 1,
         centeredSlides: true,
         autoplay: {
-          delay: 2500, // Jeda 2.5 detik antar slide
-          disableOnInteraction: false, // Biarkan autoplay terus berjalan meskipun user berinteraksi
+          delay: 3000,
+          disableOnInteraction: false,
         },
         pagination: {
           el: ".swiper-pagination",
